@@ -1,5 +1,10 @@
 const answerDisplay = document.getElementById('answer-input');
 
+// let havDot = false;
+
+
+
+
 function calculate (number){
   answerDisplay.value += number;
 }
@@ -9,7 +14,7 @@ function answer(){
     answerDisplay.value = eval(answerDisplay.value)
   }
   catch(error){
-    alert('Enter a valid calculation');
+    answerDisplay.value = 'error.';
   }
 }
 
